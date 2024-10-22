@@ -7,7 +7,7 @@
     border-radius: 10px;
     background: white;
     font-size: 13px;
-    padding: 2%;
+    padding: 8%;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     /* Added a subtle shadow */
     position: relative;
@@ -43,7 +43,7 @@
     align-items: center;
     font-size: smaller;
     display: flex;
-    gap: 5px;
+    gap: 15px;
     flex-wrap: wrap;
 }
 
