@@ -1,13 +1,9 @@
 .dashContainer {
     display: flex;
     align-items: flex-start;
-    padding-left: 2%;
-    padding-right: 2%;
-    padding-bottom: 1.5%;
-    padding-top: 3%;
+    padding: 3% 2%;
     flex-wrap: wrap;
     background-color: #f4f5f8;
-    background-position: fill;
     min-height: 100vh;
 }
 
@@ -15,7 +11,12 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 350px;
+    width: 100%;
+    /* Full width by default */
+    max-width: 350px;
+    /* Limit width */
+    margin: 1%;
+    /* Add some margin between cards */
     align-content: center;
     gap: 5px;
 }
@@ -26,17 +27,17 @@
 }
 
 /* Responsive styles */
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 769px) {
     .dashCardContainer {
-        width: 30%;
-        /* Adjust the width based on your design */
+        width: calc(33.33% - 2%);
+        /* 3 cards per row */
     }
 }
 
 @media screen and (max-width: 768px) {
     .dashCardContainer {
-        width: 45%;
-        /* Adjust the width based on your design */
+        width: calc(50% - 2%);
+        /* 2 cards per row */
     }
 }
 
